@@ -1,0 +1,15 @@
+﻿@page
+@model CreateModel
+@{
+	ViewData["Title"] = "Create";
+}
+<div class="input-form-container">
+	<h1 class="input-form-title">Create New Task</h1>
+	<form method="Post" class="input-form">
+		<label for="Name">Title</label>
+		<input name="Name" type="text" required/>
+		<label for="Description" class="input-form-description">Description</label>
+		<input name="Description" type="text" required/>
+		<button type="submit">Create</button>
+	</form>
+</div>

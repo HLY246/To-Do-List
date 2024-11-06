@@ -1,0 +1,18 @@
+﻿@page
+@model ToDoList.Pages.EditModel
+@{
+	ViewData["Title"] = "Edit";
+}
+
+
+<div class="input-form-container">
+	<h1 class="input-form-title">Edit Task</h1>
+	<form method="Post" class="input-form">
+		<input type="hidden" value="@Model.ItemToEdit.Id" required/>
+		<label for="Name">Title</label>
+		<input name="Name" type="text" value="@Model.ItemToEdit.Name" />
+		<label for="Description">Description</label>
+		<input name="Description" type="text" value="@Model.ItemToEdit.Description" required/>
+		<button type="submit">Edit</button>
+	</form>
+</div>

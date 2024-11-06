@@ -1,0 +1,210 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+    margin-bottom: 60px;
+    background: #F4f7fa; 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/*Heading styles*/
+header {
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    /*font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    text-decoration: none;*/
+
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: #222;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    align-items: center;
+    text-decoration: none;
+    width: 60vw;
+    margin: 25px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#title:after, #title:before {
+    content: " ";
+    display: block;
+    border-bottom: 4px solid #7db3e3;
+    border-top: 4px solid #7db3e3;
+    height: 15px;
+    background-color: #f8f8f8;
+}
+
+/*table styles*/
+#table-container {
+    box-shadow: 0 4px 8px;
+    border-radius: 8px;
+    padding: 30px 0;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    /*background-color: #f9fafb;*/
+    background-color: #dae4ed;
+    color: #333;
+    font-weight: 700;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+/*In table button styles*/
+
+#delete-btn-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#edit-btn {
+    background-color: #4c6ef5;
+    color: #fff;
+    padding: 8px 15px;
+}
+
+#edit-btn:hover {
+    background-color: #1a43f5;
+}
+
+#delete-btn {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+#delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/*Create New Task styles*/
+
+#create-link-btn {
+    width: 170px;
+    text-align: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+#create-link-btn:hover {
+    background-color: #45a049;
+}
+
+/*Input forms*/
+.input-form-container {
+    box-shadow: 0 4px 8px;
+    border-radius: 8px;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+.input-form-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form input {
+    padding: 10px;
+}
+
+.input-form label {
+    margin-top: 20px;
+}
+
+.input-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.input-form button:hover {
+    background-color: #218838;
+}
